@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon-container{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.booking-title-container{
+    width: 70% !important;
+}
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-bar-container {
+    position: fixed;
+    top: 0%;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    z-index: 800;
+}
+
+.nav-bar-text-flex-container {
+    width: 100%;
+    z-index: 1970;
+}
+
+.video-flex-container {
+    width: 100%;
+    height: 30%;
+}
+
+.nav-bar-menu-container {
+    width: 60%;
+    justify-self: right;
+    justify-content: space-around;
+    padding: 15px;
+    padding-left: 200px;
+    z-index: 979;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+.nav-bar-menu-item {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 5px;
+}
+ 
+.nav-bar-menu-item:hover {
+    border-top: 2px solid rgb(68, 163, 195)
+}
+
+.main-video-container {
+    margin-top: 1020px;
+    padding-top: 1000px;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 40%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.video-text {
+    padding: 15px;
+    font-weight: 550 !important;
+    font-family: poppins-semibold,poppins,sans-serif
+}
+
+.video-button {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    background-color: lightblue;
+    border-radius: 20px;
+    border: 2px lightblue;
+    color: black;
+}
+
+.video-button-container{
+    justify-content: center;
+}
+
+.services-container {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+
+.container-title {
+    padding: 12px;
+    font-size: 30px;
+    font-weight: 550;
+    color: lightblue;
+}
+
+.service-menu-container {
+    width: 80%;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+}
+
+.service-collage {
+    padding: 20px;
+    justify-content: center;
+}
+
+.black {
+    color: black;
+}
+
+.form-input {
+    padding: 15px;
+    margin: 10px;
+}
+
+.form-select {
+    padding: 15px;
+    margin: 10px;
+    width: 196.5px;
+}
+
+.submit-button {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    background-color: lightblue;
+    border: 2px lightblue;
+    color: black;
+}
+
+  header {
+    position: relative;
+    background-color: white;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 380px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 3;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+
+
+  /* monitors */
+  @media (min-width: 1200px){
+    .container {
+        max-width: 100% !important;
+        max-height: 15% !important;
+    }
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .h5,
+  h5 {
+    font-size: 1rem;
+  }
+  
+.container{
+    display: block;
+}
+
+  .image img {
+    width: 160px;
+    height: 80px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .border-black,
+  .text-black {
+    border-color: #222;
+    color: #222;
+  }
+  
+  .bg-light-gray-even:nth-child(even) {
+    background: #f5f5f5;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 768px) {
+    .border-md-right {
+      border-right: 1px solid #bbb;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .image img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .locations-container {
+    padding-top: 40px!important;
+  }
+  
+  nav {
+    width: 100%;
+  }
