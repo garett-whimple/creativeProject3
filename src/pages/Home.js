@@ -80,6 +80,10 @@ const Home = () => {
                     <input class="submit-button" type="submit" value="Submit"></input>
                 </form>
             </div>
+            <footer>
+            <p>Garett Whimple and Connor Ellis pair programmed this project</p>
+            <a href='https://github.com/garett-whimple/creativeProject3'>Git Hub Repo</a>
+        </footer>
         </div>
         </div>
     );
